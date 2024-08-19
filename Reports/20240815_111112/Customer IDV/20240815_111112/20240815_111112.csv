@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Customer IDV,,,,15-08-2024 11:11:23,15-08-2024 11:11:33,9.800s,FAILED
+,,,,,,,
+Test Cases/TC02_Customer_Idv,,Scenario 2 : Take NRIC from customer idv table that has done fully ekyc,,15-08-2024 11:11:32,15-08-2024 11:11:33,0.582s,FAILED
+statreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,,Member Onboarding Status,,15-08-2024 11:11:32,15-08-2024 11:11:32,0.000s,PASSED
+custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000,,,,15-08-2024 11:11:32,15-08-2024 11:11:32,0.001s,PASSED
+println(custloan_id),,,,15-08-2024 11:11:32,15-08-2024 11:11:32,0.000s,PASSED
+"response4 = sendRequest(findTestObject(""EKYC Flow/Member Onboarding Status"", [""stat_req_id"":statreq_id, ""NRIC"":IDV_Nric]))",,,,15-08-2024 11:11:32,15-08-2024 11:11:32,0.165s,PASSED
+println(response4.getResponseBodyContent()),,,,15-08-2024 11:11:32,15-08-2024 11:11:32,0.000s,PASSED
+getStatusCode()).isEqualTo(200),,,,15-08-2024 11:11:32,15-08-2024 11:11:32,0.000s,PASSED
+"println(verifyElementPropertyValue(response4, ""exists"", ""true""))",,,,15-08-2024 11:11:32,15-08-2024 11:11:32,0.050s,PASSED
+exreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,,Member Existence Check,,15-08-2024 11:11:32,15-08-2024 11:11:32,0.000s,PASSED
+println(custloan_id),,,,15-08-2024 11:11:32,15-08-2024 11:11:32,0.001s,PASSED
+"response5 = sendRequest(findTestObject(""EKYC Flow/Member Existence Check"", [""ex_loan_id"":custloan_id, ""ex_req_id"":exreq_id, ""NRIC"":IDV_Nric]))",,,,15-08-2024 11:11:32,15-08-2024 11:11:32,0.152s,PASSED
+println(response5.getResponseBodyContent()),,,,15-08-2024 11:11:32,15-08-2024 11:11:32,0.000s,PASSED
+getStatusCode()).isEqualTo(200),,,,15-08-2024 11:11:32,15-08-2024 11:11:32,0.000s,PASSED
+"println(verifyElementPropertyValue(response5, ""exists"", ""true""))",,,,15-08-2024 11:11:32,15-08-2024 11:11:33,0.042s,PASSED
+"println(""**************MEMBER EXISTENCE PASSED**************"")",,,,15-08-2024 11:11:33,15-08-2024 11:11:33,0.001s,PASSED
+custreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,,Customer Risk Rating,,15-08-2024 11:11:33,15-08-2024 11:11:33,0.000s,PASSED
+custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000,,,,15-08-2024 11:11:33,15-08-2024 11:11:33,0.001s,PASSED
+println(custloan_id),,,,15-08-2024 11:11:33,15-08-2024 11:11:33,0.001s,PASSED
+"response1 = sendRequest(findTestObject(""EKYC Flow/Customer Risk Rating"", [""cust_req_id"":custreq_id, ""cust_loan_id"":custloan_id, ""NRIC"":IDV_Nric]))",,,,15-08-2024 11:11:33,15-08-2024 11:11:33,0.117s,PASSED
+println(response1.getResponseBodyContent()),,,,15-08-2024 11:11:33,15-08-2024 11:11:33,0.000s,PASSED
+getStatusCode()).isEqualTo(200),,,,15-08-2024 11:11:33,15-08-2024 11:11:33,0.003s,FAILED

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Customer IDV" time="79.881" tests="1" failures="0" errors="0">
+   <testsuite name="Customer IDV" tests="1" failures="0" errors="0" time="79.881" skipped="0" timestamp="13-08-2024T12:26:03" hostname="Zulaikha_118633 - 118633-001L-MY.adl.local" id="Test Suites/Customer IDV">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\zulaikha_118633\\git\\EKYCFlow\\Reports\\20240813_122558\\Customer IDV\\20240813_122558"/>
+         <property name="logFiles" value="C:\\Users\\zulaikha_118633\\git\\EKYCFlow\\Reports\\20240813_122558\\Customer IDV\\20240813_122558\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Zulaikha_118633 - 118633-001L-MY.adl.local"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="9.6.0.217"/>
+         <property name="browser" value="Chrome 127.0.0.0"/>
+         <property name="hostAddress" value="172.20.10.3"/>
+         <property name="sessionId" value="7a112fa5229da72f3e5c0605ae75b824"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/TC02_Customer_Idv" time="79.441" classname="Test Cases/TC02_Customer_Idv" status="PASSED">
+         <system-out><![CDATA[13-08-2024T12:26:04 - [TEST_CASE][PASSED] - Test Cases/TC02_Customer_Idv: Test Cases/TC02_Customer_Idv
+
+13-08-2024T12:26:05 - [TEST_STEP][PASSED] - statreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+13-08-2024T12:26:05 - [TEST_STEP][PASSED] - custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+13-08-2024T12:26:05 - [TEST_STEP][PASSED] - println(custloan_id): null
+
+13-08-2024T12:26:05 - [TEST_STEP][PASSED] - response4 = sendRequest(findTestObject("EKYC Flow/Member Onboarding Status", ["stat_req_id":statreq_id, "NRIC":IDV_Nric])): Send request successfully
+
+13-08-2024T12:26:09 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240813_122558\Customer IDV\20240813_122558\requests\main\0.har
+
+13-08-2024T12:26:09 - [MESSAGE][PASSED] - Send request successfully
+
+13-08-2024T12:26:09 - [TEST_STEP][PASSED] - println(response4.getResponseBodyContent()): null
+
+13-08-2024T12:26:09 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+13-08-2024T12:26:09 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response4, "exists", "true")): Verify element property value successfully
+
+13-08-2024T12:26:09 - [MESSAGE][PASSED] - Verify element property value successfully
+
+13-08-2024T12:26:09 - [TEST_STEP][PASSED] - exreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+13-08-2024T12:26:09 - [TEST_STEP][PASSED] - println(custloan_id): null
+
+13-08-2024T12:26:09 - [TEST_STEP][PASSED] - response5 = sendRequest(findTestObject("EKYC Flow/Member Existence Check", ["ex_loan_id":custloan_id, "ex_req_id":exreq_id, "NRIC":IDV_Nric])): Send request successfully
+
+13-08-2024T12:26:10 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240813_122558\Customer IDV\20240813_122558\requests\main\1.har
+
+13-08-2024T12:26:10 - [MESSAGE][PASSED] - Send request successfully
+
+13-08-2024T12:26:10 - [TEST_STEP][PASSED] - println(response5.getResponseBodyContent()): null
+
+13-08-2024T12:26:10 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+13-08-2024T12:26:10 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response5, "exists", "true")): Verify element property value successfully
+
+13-08-2024T12:26:10 - [MESSAGE][PASSED] - Verify element property value successfully
+
+13-08-2024T12:26:10 - [TEST_STEP][PASSED] - println("**************MEMBER EXISTENCE PASSED**************"): null
+
+13-08-2024T12:26:10 - [TEST_STEP][PASSED] - custreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+13-08-2024T12:26:10 - [TEST_STEP][PASSED] - custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+13-08-2024T12:26:10 - [TEST_STEP][PASSED] - println(custloan_id): null
+
+13-08-2024T12:26:10 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("EKYC Flow/Customer Risk Rating", ["cust_req_id":custreq_id, "cust_loan_id":custloan_id, "NRIC":IDV_Nric])): Send request successfully
+
+13-08-2024T12:26:12 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240813_122558\Customer IDV\20240813_122558\requests\main\2.har
+
+13-08-2024T12:26:12 - [MESSAGE][PASSED] - Send request successfully
+
+13-08-2024T12:26:12 - [TEST_STEP][PASSED] - println(response1.getResponseBodyContent()): null
+
+13-08-2024T12:26:12 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+13-08-2024T12:26:12 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response1, "evaluationStatus", "Approve")): Verify element property value successfully
+
+13-08-2024T12:26:12 - [MESSAGE][PASSED] - Verify element property value successfully
+
+13-08-2024T12:26:12 - [TEST_STEP][PASSED] - println("**************CUSTOMER RISK RATING PASSED**************"): null
+
+13-08-2024T12:26:12 - [TEST_STEP][PASSED] - indreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+13-08-2024T12:26:12 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("EKYC Flow/Industry Risk Rating", ["ind_loan_id":custloan_id, "ind_req_id":indreq_id, "NRIC":IDV_Nric])): Send request successfully
+
+13-08-2024T12:26:13 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240813_122558\Customer IDV\20240813_122558\requests\main\3.har
+
+13-08-2024T12:26:13 - [MESSAGE][PASSED] - Send request successfully
+
+13-08-2024T12:26:13 - [TEST_STEP][PASSED] - println(response2.getResponseBodyContent()): null
+
+13-08-2024T12:26:13 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+13-08-2024T12:26:13 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response2, "riskAssessmentType", "PROHIBITED_INDUSTRY")): Verify element property value successfully
+
+13-08-2024T12:26:13 - [MESSAGE][PASSED] - Verify element property value successfully
+
+13-08-2024T12:26:13 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response2, "evaluationStatus", "Reject")): Verify element property value successfully
+
+13-08-2024T12:26:13 - [MESSAGE][PASSED] - Verify element property value successfully
+
+13-08-2024T12:26:13 - [TEST_STEP][PASSED] - println("**************INDUSTRY RISK RATING PASSED**************"): null
+
+13-08-2024T12:26:13 - [TEST_STEP][PASSED] - comreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+13-08-2024T12:26:13 - [TEST_STEP][PASSED] - response3 = sendRequest(findTestObject("EKYC Flow/Company Risk Rating", ["com_loan_id":custloan_id, "com_req_id":comreq_id, "NRIC":IDV_Nric])): Send request successfully
+
+13-08-2024T12:26:14 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240813_122558\Customer IDV\20240813_122558\requests\main\4.har
+
+13-08-2024T12:26:14 - [MESSAGE][PASSED] - Send request successfully
+
+13-08-2024T12:26:14 - [TEST_STEP][PASSED] - println(response3.getResponseBodyContent()): null
+
+13-08-2024T12:26:14 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+13-08-2024T12:26:14 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response3, "riskAssessmentType", "COMPANY_RISK")): Verify element property value successfully
+
+13-08-2024T12:26:14 - [MESSAGE][PASSED] - Verify element property value successfully
+
+13-08-2024T12:26:14 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response3, "evaluationStatus", "Reject")): Verify element property value successfully
+
+13-08-2024T12:26:14 - [MESSAGE][PASSED] - Verify element property value successfully
+
+13-08-2024T12:26:14 - [TEST_STEP][PASSED] - println("**************COMPANY RISK RATING PASSED**************"): null
+
+13-08-2024T12:26:14 - [TEST_STEP][PASSED] - serreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+13-08-2024T12:26:14 - [TEST_STEP][PASSED] - response7 = sendRequest(findTestObject("EKYC Flow/Server Bio", ["ser_loan_id":custloan_id, "ser_req_id":serreq_id, "NRIC":IDV_Nric])): Send request successfully
+
+13-08-2024T12:26:14 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240813_122558\Customer IDV\20240813_122558\requests\main\5.har
+
+13-08-2024T12:26:14 - [MESSAGE][PASSED] - Send request successfully
+
+13-08-2024T12:26:14 - [TEST_STEP][PASSED] - println(response7.getResponseBodyContent()): null
+
+13-08-2024T12:26:14 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+13-08-2024T12:26:14 - [TEST_STEP][PASSED] - web1 = getElementPropertyValue(response7, "webUrl"): null
+
+13-08-2024T12:26:14 - [TEST_STEP][PASSED] - println(web1): null
+
+13-08-2024T12:26:14 - [TEST_STEP][PASSED] - openBrowser(web1): Browser is opened with url: 'https://boost.web.apac-1.jumio.ai/web/v4/app?authorizationToken=eyJhbGciOiJIUzUxMiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAA_5XMOQ5CMQwE0LukxpKX2HHoKGm5QTafAAkkxN3J_zeg9Mwbf9J6357pmqiwKEsxyYLpktoY97nzqY7G2qBiFcjNEBpPh0WzZGzmWvvBT-xsGt4JhjlBLjSgdnHQVUqETMUlG79i_cPHY8XWjJzRSYjZUGyPjaQe_fnMSm9cc4MWOiFzcei6z15jhJtqnp6-P1EsX5vwAAAA.EEddceBcM2DLZBf8CVU5S8qQ2flY7wbFKfBbqNF3dMrWUCJzrQmhuU3oWOSwGZLzAKSEtkXNO0B_DALlSOIBBw&locale=en'
+
+13-08-2024T12:26:15 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+13-08-2024T12:26:15 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+13-08-2024T12:26:21 - [MESSAGE][PASSED] - Browser is opened with url: 'https://boost.web.apac-1.jumio.ai/web/v4/app?authorizationToken=eyJhbGciOiJIUzUxMiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAA_5XMOQ5CMQwE0LukxpKX2HHoKGm5QTafAAkkxN3J_zeg9Mwbf9J6357pmqiwKEsxyYLpktoY97nzqY7G2qBiFcjNEBpPh0WzZGzmWvvBT-xsGt4JhjlBLjSgdnHQVUqETMUlG79i_cPHY8XWjJzRSYjZUGyPjaQe_fnMSm9cc4MWOiFzcei6z15jhJtqnp6-P1EsX5vwAAAA.EEddceBcM2DLZBf8CVU5S8qQ2flY7wbFKfBbqNF3dMrWUCJzrQmhuU3oWOSwGZLzAKSEtkXNO0B_DALlSOIBBw&locale=en'
+
+13-08-2024T12:26:21 - [TEST_STEP][PASSED] - delay(60): Delayed 60 second(s)
+
+13-08-2024T12:27:21 - [MESSAGE][PASSED] - Delayed 60 second(s)
+
+13-08-2024T12:27:21 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+13-08-2024T12:27:23 - [MESSAGE][PASSED] - Browser is closed
+
+13-08-2024T12:27:23 - [TEST_STEP][PASSED] - println("**************SERVER BIO PASSED**************"): null
+
+13-08-2024T12:27:23 - [TEST_STEP][PASSED] - loanreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+13-08-2024T12:27:23 - [TEST_STEP][PASSED] - email = Math.random() * 100: null
+
+13-08-2024T12:27:23 - [TEST_STEP][PASSED] - BRN = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+13-08-2024T12:27:23 - [TEST_STEP][PASSED] - println(loanreq_id): null
+
+13-08-2024T12:27:23 - [TEST_STEP][PASSED] - println(BRN): null
+
+13-08-2024T12:27:23 - [TEST_STEP][PASSED] - Loanresponse = sendRequest(findTestObject("EKYC Flow/Loan Onboarding", ["Token":Token, "loan_id":custloan_id, "loan_req_id":loanreq_id, "email":email, "BRN":BRN])): Send request successfully
+
+13-08-2024T12:27:23 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240813_122558\Customer IDV\20240813_122558\requests\main\6.har
+
+13-08-2024T12:27:23 - [MESSAGE][PASSED] - Send request successfully
+
+13-08-2024T12:27:23 - [TEST_STEP][PASSED] - println(Loanresponse.getResponseBodyContent()): null
+
+13-08-2024T12:27:23 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+13-08-2024T12:27:23 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(Loanresponse, "status", "PROCESSING")): Verify element property value successfully
+
+13-08-2024T12:27:23 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[13-08-2024T12:26:03 - [TEST_SUITE][PASSED] - Customer IDV: Test Cases/TC02_Customer_Idv]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

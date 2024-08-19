@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New Test Suite,,,,01-08-2024 11:21:28,01-08-2024 11:21:31,3.067s,FAILED
+,,,,,,,
+Test Cases/TC02_Customer_Idv,,Scenario 2 : Take NRIC from customer idv table that has done fully ekyc,,01-08-2024 11:21:31,01-08-2024 11:21:31,0.157s,FAILED
+exreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,,Member Existence Check,,01-08-2024 11:21:31,01-08-2024 11:21:31,0.000s,PASSED
+custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000,,,,01-08-2024 11:21:31,01-08-2024 11:21:31,0.001s,PASSED
+println(custloan_id),,,,01-08-2024 11:21:31,01-08-2024 11:21:31,0.001s,PASSED
+"response5 = sendRequest(findTestObject(""EKYC Flow/Member Existence Check"", [""ex_loan_id"":custloan_id, ""ex_req_id"":exreq_id, ""NRIC"":IDV_Nric]))",,,,01-08-2024 11:21:31,01-08-2024 11:21:31,0.118s,FAILED

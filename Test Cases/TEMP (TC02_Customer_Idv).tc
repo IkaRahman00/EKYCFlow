@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Take NRIC from customer idv table that has completed fully ekyc.</description>
+   <name>TEMP (TC02_Customer_Idv)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7ef5559d-b39a-41e3-a4dd-babc320f3323</testCaseGuid>
+</TestCaseEntity>

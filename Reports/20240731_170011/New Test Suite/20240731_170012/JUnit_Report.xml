@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="New Test Suite" time="9.543" tests="1" failures="0" errors="0">
+   <testsuite name="New Test Suite" tests="1" failures="0" errors="0" time="9.543" skipped="0" timestamp="31-07-2024T17:00:17" hostname="Zulaikha_118633 - 118633-001L-MY.adl.local" id="Test Suites/New Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\zulaikha_118633\\git\\EKYCFlow\\Reports\\20240731_170011\\New Test Suite\\20240731_170012"/>
+         <property name="logFiles" value="C:\\Users\\zulaikha_118633\\git\\EKYCFlow\\Reports\\20240731_170011\\New Test Suite\\20240731_170012\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Zulaikha_118633 - 118633-001L-MY.adl.local"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="9.6.0.217"/>
+         <property name="browser" value="Chrome 127.0.0.0"/>
+         <property name="hostAddress" value="172.20.10.3"/>
+         <property name="sessionId" value="ffbff6fffac8c23dc0a938ff55618e2d"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Fully EKYC (Temp)" time="5.492" classname="Test Cases/Fully EKYC (Temp)" status="PASSED">
+         <system-out><![CDATA[31-07-2024T17:00:21 - [TEST_CASE][PASSED] - Test Cases/Fully EKYC (Temp): Test Cases/Fully EKYC (Temp)
+
+31-07-2024T17:00:21 - [TEST_STEP][PASSED] - ekycreq_id = Math.random() * 100: null
+
+31-07-2024T17:00:21 - [TEST_STEP][PASSED] - custloan_id = Math.random() * 100: null
+
+31-07-2024T17:00:21 - [TEST_STEP][PASSED] - println(ekycreq_id): null
+
+31-07-2024T17:00:21 - [TEST_STEP][PASSED] - response6 = sendRequest(findTestObject("EKYC Flow/Fully EKYC", ["ekyc_loan_id":custloan_id, "ekyc_req_id":ekycreq_id, "NRIC":New])): Send request successfully
+
+31-07-2024T17:00:21 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240731_170011\New Test Suite\20240731_170012\requests\main\1.har
+
+31-07-2024T17:00:21 - [MESSAGE][PASSED] - Send request successfully
+
+31-07-2024T17:00:21 - [TEST_STEP][PASSED] - println(response6.getResponseBodyContent()): null
+
+31-07-2024T17:00:21 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+31-07-2024T17:00:21 - [TEST_STEP][PASSED] - web = getElementPropertyValue(response6, "webUrl"): null
+
+31-07-2024T17:00:21 - [TEST_STEP][PASSED] - println(web): null
+
+31-07-2024T17:00:21 - [TEST_STEP][PASSED] - openBrowser(web): Browser is opened with url: 'https://boost.web.apac-1.jumio.ai/web/v4/app?authorizationToken=eyJhbGciOiJIUzUxMiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAA_5XOOQ5CMQwE0LukxlK8xTEdJS03yOYTIIGEuDv5_waU43my5pPW-_ZM14RGJGgZUT2nS2pj3Oe-j4hRwyd4QQExNmi-MnAgIjen3ubBT8zW3eaaoN0zCCNBr72Atsw6kUMybfyK9Q8fjxVbUybJxrhH7pWkjNW5Hv35rFhv5NKghU4Qsgpdd-weI2pRlVnT9wdiYhB48AAAAA.MR4KK7aSJH7chnZq3jFp_F2EK2pvEUh9DqXwNYgm-0DJIDPbXLViEtw3TLuM-2nyAyJrb046DoyzAMhAzt-1EQ&locale=en'
+
+31-07-2024T17:00:22 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+31-07-2024T17:00:22 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+31-07-2024T17:00:26 - [MESSAGE][PASSED] - Browser is opened with url: 'https://boost.web.apac-1.jumio.ai/web/v4/app?authorizationToken=eyJhbGciOiJIUzUxMiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAA_5XOOQ5CMQwE0LukxlK8xTEdJS03yOYTIIGEuDv5_waU43my5pPW-_ZM14RGJGgZUT2nS2pj3Oe-j4hRwyd4QQExNmi-MnAgIjen3ubBT8zW3eaaoN0zCCNBr72Atsw6kUMybfyK9Q8fjxVbUybJxrhH7pWkjNW5Hv35rFhv5NKghU4Qsgpdd-weI2pRlVnT9wdiYhB48AAAAA.MR4KK7aSJH7chnZq3jFp_F2EK2pvEUh9DqXwNYgm-0DJIDPbXLViEtw3TLuM-2nyAyJrb046DoyzAMhAzt-1EQ&locale=en']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[31-07-2024T17:00:17 - [TEST_SUITE][FAILED] - New Test Suite: Test Cases/Fully EKYC (Temp) FAILED.
+Reason:
+org.junit.ComparisonFailure: expected:<[2]00> but was:<[4]00>
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at Fully EKYC (Temp).run(Fully EKYC (Temp):32)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1722416412865.run(TempTestSuite1722416412865.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-out>
+      <system-err><![CDATA[31-07-2024T17:00:17 - [TEST_SUITE][FAILED] - New Test Suite: Test Cases/Fully EKYC (Temp) FAILED.
+Reason:
+org.junit.ComparisonFailure: expected:<[2]00> but was:<[4]00>
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at Fully EKYC (Temp).run(Fully EKYC (Temp):32)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1722416412865.run(TempTestSuite1722416412865.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+   </testsuite>
+</testsuites>

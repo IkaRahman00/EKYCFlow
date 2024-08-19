@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New NRIC Server Bio,Chrome 127.0.0.0,,,02-08-2024 10:56:39,02-08-2024 10:57:10,31.503s,PASSED
+,,,,,,,
+Test Cases/TC04_NewNRIC_ServerBio,Chrome 127.0.0.0,"Scenario 3 : After done fully ekyc for new NRIC, check for the server bio.",,02-08-2024 10:56:39,02-08-2024 10:57:10,31.108s,PASSED
+serreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,Chrome 127.0.0.0,Server Bio,,02-08-2024 10:56:40,02-08-2024 10:56:41,0.107s,PASSED
+custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000,Chrome 127.0.0.0,,,02-08-2024 10:56:41,02-08-2024 10:56:41,0.013s,PASSED
+"response7 = sendRequest(findTestObject(""EKYC Flow/Server Bio"", [""ser_loan_id"":custloan_id, ""ser_req_id"":serreq_id, ""NRIC"":New_Nric]))",Chrome 127.0.0.0,,,02-08-2024 10:56:41,02-08-2024 10:56:44,3.888s,PASSED
+println(response7.getResponseBodyContent()),Chrome 127.0.0.0,,,02-08-2024 10:56:44,02-08-2024 10:56:44,0.044s,PASSED
+getStatusCode()).isEqualTo(200),Chrome 127.0.0.0,,,02-08-2024 10:56:44,02-08-2024 10:56:45,0.410s,PASSED
+"web1 = getElementPropertyValue(response7, ""webUrl"")",Chrome 127.0.0.0,,,02-08-2024 10:56:45,02-08-2024 10:56:45,0.195s,PASSED
+println(web1),Chrome 127.0.0.0,,,02-08-2024 10:56:45,02-08-2024 10:56:45,0.004s,PASSED
+openBrowser(web1),Chrome 127.0.0.0,,,02-08-2024 10:56:45,02-08-2024 10:56:50,4.792s,PASSED
+delay(20),Chrome 127.0.0.0,,,02-08-2024 10:56:50,02-08-2024 10:57:10,20.130s,PASSED
+closeBrowser(),Chrome 127.0.0.0,,,02-08-2024 10:57:10,02-08-2024 10:57:10,0.451s,PASSED
+"println(""**************SERVER BIO PASSED**************"")",Chrome 127.0.0.0,,,02-08-2024 10:57:10,02-08-2024 10:57:10,0.002s,PASSED

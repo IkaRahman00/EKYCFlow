@@ -1,0 +1,7 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New NRIC Server Bio,,,,02-08-2024 10:37:27,02-08-2024 10:37:29,1.605s,ERROR
+,,,,,,,
+Test Cases/TC04_NewNRIC_ServerBio,,"Scenario 3 : After done fully ekyc for new NRIC, check for the server bio.",,02-08-2024 10:37:29,02-08-2024 10:37:29,0.058s,ERROR
+serreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,,Server Bio,,02-08-2024 10:37:29,02-08-2024 10:37:29,0.002s,PASSED
+custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000,,,,02-08-2024 10:37:29,02-08-2024 10:37:29,0.001s,PASSED
+"response7 = sendRequest(findTestObject(""EKYC Flow/Server Bio"", [""ser_loan_id"":custloan_id, ""ser_req_id"":serreq_id, ""NRIC"":New_Nric]))",,,,02-08-2024 10:37:29,02-08-2024 10:37:29,0.005s,ERROR

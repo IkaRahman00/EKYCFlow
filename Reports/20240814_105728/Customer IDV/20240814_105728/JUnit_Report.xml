@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Customer IDV" time="24.204" tests="1" failures="1" errors="0">
+   <testsuite name="Customer IDV" tests="1" failures="1" errors="0" time="24.204" skipped="0" timestamp="14-08-2024T10:57:33" hostname="Zulaikha_118633 - 118633-001L-MY.adl.local" id="Test Suites/Customer IDV">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\zulaikha_118633\\git\\EKYCFlow\\Reports\\20240814_105728\\Customer IDV\\20240814_105728"/>
+         <property name="logFiles" value="C:\\Users\\zulaikha_118633\\git\\EKYCFlow\\Reports\\20240814_105728\\Customer IDV\\20240814_105728\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Zulaikha_118633 - 118633-001L-MY.adl.local"/>
+         <property name="hostAddress" value="172.20.10.3"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="9.6.0.217"/>
+      </properties>
+      <testcase name="Test Cases/TC02_Customer_Idv" time="4.167" classname="Test Cases/TC02_Customer_Idv" status="FAILED">
+         <failure type="FAILED" message="Test Cases/TC02_Customer_Idv FAILED.&#xa;Reason:&#xa;org.junit.ComparisonFailure: expected:&lt;[2]00> but was:&lt;[4]00>&#xa;	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#xa;	at TC02_Customer_Idv.run(TC02_Customer_Idv:76)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)&#xa;	at TempTestSuite1723604248703.run(TempTestSuite1723604248703.groovy:35)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;"/>
+         <system-out><![CDATA[14-08-2024T10:57:53 - [TEST_CASE][FAILED] - Test Cases/TC02_Customer_Idv: Test Cases/TC02_Customer_Idv FAILED.
+Reason:
+org.junit.ComparisonFailure: expected:<[2]00> but was:<[4]00>
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at TC02_Customer_Idv.run(TC02_Customer_Idv:76)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1723604248703.run(TempTestSuite1723604248703.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+14-08-2024T10:57:53 - [TEST_STEP][PASSED] - statreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+14-08-2024T10:57:53 - [TEST_STEP][PASSED] - custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+14-08-2024T10:57:53 - [TEST_STEP][PASSED] - println(custloan_id): null
+
+14-08-2024T10:57:53 - [TEST_STEP][PASSED] - response4 = sendRequest(findTestObject("EKYC Flow/Member Onboarding Status", ["stat_req_id":statreq_id, "NRIC":IDV_Nric])): Send request successfully
+
+14-08-2024T10:57:53 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240814_105728\Customer IDV\20240814_105728\requests\main\18.har
+
+14-08-2024T10:57:53 - [MESSAGE][PASSED] - Send request successfully
+
+14-08-2024T10:57:53 - [TEST_STEP][PASSED] - println(response4.getResponseBodyContent()): null
+
+14-08-2024T10:57:53 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+14-08-2024T10:57:53 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response4, "exists", "true")): Verify element property value successfully
+
+14-08-2024T10:57:53 - [MESSAGE][PASSED] - Verify element property value successfully
+
+14-08-2024T10:57:53 - [TEST_STEP][PASSED] - exreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+14-08-2024T10:57:53 - [TEST_STEP][PASSED] - println(custloan_id): null
+
+14-08-2024T10:57:53 - [TEST_STEP][PASSED] - response5 = sendRequest(findTestObject("EKYC Flow/Member Existence Check", ["ex_loan_id":custloan_id, "ex_req_id":exreq_id, "NRIC":IDV_Nric])): Send request successfully
+
+14-08-2024T10:57:54 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240814_105728\Customer IDV\20240814_105728\requests\main\19.har
+
+14-08-2024T10:57:54 - [MESSAGE][PASSED] - Send request successfully
+
+14-08-2024T10:57:54 - [TEST_STEP][PASSED] - println(response5.getResponseBodyContent()): null
+
+14-08-2024T10:57:54 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+14-08-2024T10:57:54 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response5, "exists", "true")): Verify element property value successfully
+
+14-08-2024T10:57:54 - [MESSAGE][PASSED] - Verify element property value successfully
+
+14-08-2024T10:57:54 - [TEST_STEP][PASSED] - println("**************MEMBER EXISTENCE PASSED**************"): null
+
+14-08-2024T10:57:54 - [TEST_STEP][PASSED] - custreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+14-08-2024T10:57:54 - [TEST_STEP][PASSED] - custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+14-08-2024T10:57:54 - [TEST_STEP][PASSED] - println(custloan_id): null
+
+14-08-2024T10:57:54 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("EKYC Flow/Customer Risk Rating", ["cust_req_id":custreq_id, "cust_loan_id":custloan_id, "NRIC":IDV_Nric])): Send request successfully
+
+14-08-2024T10:57:54 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240814_105728\Customer IDV\20240814_105728\requests\main\20.har
+
+14-08-2024T10:57:54 - [MESSAGE][PASSED] - Send request successfully
+
+14-08-2024T10:57:54 - [TEST_STEP][PASSED] - println(response1.getResponseBodyContent()): null
+
+14-08-2024T10:57:54 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+14-08-2024T10:57:54 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response1, "evaluationStatus", "Approve")): Verify element property value successfully
+
+14-08-2024T10:57:55 - [MESSAGE][PASSED] - Verify element property value successfully
+
+14-08-2024T10:57:55 - [TEST_STEP][PASSED] - println("**************CUSTOMER RISK RATING PASSED**************"): null
+
+14-08-2024T10:57:55 - [TEST_STEP][PASSED] - indreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+14-08-2024T10:57:55 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("EKYC Flow/Industry Risk Rating", ["ind_loan_id":custloan_id, "ind_req_id":indreq_id, "NRIC":IDV_Nric])): Send request successfully
+
+14-08-2024T10:57:56 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240814_105728\Customer IDV\20240814_105728\requests\main\21.har
+
+14-08-2024T10:57:56 - [MESSAGE][PASSED] - Send request successfully
+
+14-08-2024T10:57:56 - [TEST_STEP][PASSED] - println(response2.getResponseBodyContent()): null
+
+14-08-2024T10:57:56 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+14-08-2024T10:57:56 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response2, "riskAssessmentType", "PROHIBITED_INDUSTRY")): Verify element property value successfully
+
+14-08-2024T10:57:56 - [MESSAGE][PASSED] - Verify element property value successfully
+
+14-08-2024T10:57:56 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response2, "evaluationStatus", "Reject")): Verify element property value successfully
+
+14-08-2024T10:57:56 - [MESSAGE][PASSED] - Verify element property value successfully
+
+14-08-2024T10:57:56 - [TEST_STEP][PASSED] - println("**************INDUSTRY RISK RATING PASSED**************"): null
+
+14-08-2024T10:57:56 - [TEST_STEP][PASSED] - comreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+14-08-2024T10:57:56 - [TEST_STEP][PASSED] - response3 = sendRequest(findTestObject("EKYC Flow/Company Risk Rating", ["com_loan_id":custloan_id, "com_req_id":comreq_id, "NRIC":IDV_Nric])): Send request successfully
+
+14-08-2024T10:57:57 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240814_105728\Customer IDV\20240814_105728\requests\main\22.har
+
+14-08-2024T10:57:57 - [MESSAGE][PASSED] - Send request successfully
+
+14-08-2024T10:57:57 - [TEST_STEP][PASSED] - println(response3.getResponseBodyContent()): null
+
+14-08-2024T10:57:57 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+14-08-2024T10:57:57 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response3, "riskAssessmentType", "COMPANY_RISK")): Verify element property value successfully
+
+14-08-2024T10:57:57 - [MESSAGE][PASSED] - Verify element property value successfully
+
+14-08-2024T10:57:57 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response3, "evaluationStatus", "Reject")): Verify element property value successfully
+
+14-08-2024T10:57:57 - [MESSAGE][PASSED] - Verify element property value successfully
+
+14-08-2024T10:57:57 - [TEST_STEP][PASSED] - println("**************COMPANY RISK RATING PASSED**************"): null
+
+14-08-2024T10:57:57 - [TEST_STEP][PASSED] - serreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+14-08-2024T10:57:57 - [TEST_STEP][PASSED] - response7 = sendRequest(findTestObject("EKYC Flow/Server Bio", ["ser_loan_id":custloan_id, "ser_req_id":serreq_id, "NRIC":IDV_Nric])): Send request successfully
+
+14-08-2024T10:57:57 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240814_105728\Customer IDV\20240814_105728\requests\main\23.har
+
+14-08-2024T10:57:57 - [MESSAGE][PASSED] - Send request successfully
+
+14-08-2024T10:57:57 - [TEST_STEP][PASSED] - println(response7.getResponseBodyContent()): null
+
+14-08-2024T10:57:57 - [TEST_STEP][FAILED] - getStatusCode()).isEqualTo(200): Test Cases/TC02_Customer_Idv FAILED.
+Reason:
+org.junit.ComparisonFailure: expected:<[2]00> but was:<[4]00>
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at TC02_Customer_Idv.run(TC02_Customer_Idv:76)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1723604248703.run(TempTestSuite1723604248703.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+14-08-2024T10:57:57 - [MESSAGE][FAILED] - Test Cases/TC02_Customer_Idv FAILED.
+Reason:
+org.junit.ComparisonFailure: expected:<[2]00> but was:<[4]00>
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at TC02_Customer_Idv.run(TC02_Customer_Idv:76)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1723604248703.run(TempTestSuite1723604248703.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-out>
+         <system-err><![CDATA[14-08-2024T10:57:53 - [TEST_CASE][FAILED] - Test Cases/TC02_Customer_Idv: Test Cases/TC02_Customer_Idv FAILED.
+Reason:
+org.junit.ComparisonFailure: expected:<[2]00> but was:<[4]00>
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at TC02_Customer_Idv.run(TC02_Customer_Idv:76)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1723604248703.run(TempTestSuite1723604248703.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[14-08-2024T10:57:33 - [TEST_SUITE][FAILED] - Customer IDV: Test Cases/TC02_Customer_Idv FAILED.
+Reason:
+org.junit.ComparisonFailure: expected:<[2]00> but was:<[4]00>
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at TC02_Customer_Idv.run(TC02_Customer_Idv:76)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1723604248703.run(TempTestSuite1723604248703.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-out>
+      <system-err><![CDATA[14-08-2024T10:57:33 - [TEST_SUITE][FAILED] - Customer IDV: Test Cases/TC02_Customer_Idv FAILED.
+Reason:
+org.junit.ComparisonFailure: expected:<[2]00> but was:<[4]00>
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at TC02_Customer_Idv.run(TC02_Customer_Idv:76)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1723604248703.run(TempTestSuite1723604248703.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+   </testsuite>
+</testsuites>

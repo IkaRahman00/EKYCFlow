@@ -1,0 +1,9 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New Test Suite,,,,31-07-2024 16:11:48,31-07-2024 16:11:52,3.851s,ERROR
+,,,,,,,
+Test Cases/Fully EKYC (Temp),,,,31-07-2024 16:11:52,31-07-2024 16:11:52,0.231s,ERROR
+ekycreq_id = Math.random() * 100,,Fully EKYC,,31-07-2024 16:11:52,31-07-2024 16:11:52,0.001s,PASSED
+custloan_id = Math.random() * 100,,,,31-07-2024 16:11:52,31-07-2024 16:11:52,0.000s,PASSED
+println(ekycreq_id),,,,31-07-2024 16:11:52,31-07-2024 16:11:52,0.000s,PASSED
+"response6 = sendRequest(findTestObject(""EKYC Flow/Fully EKYC"", [""ekyc_loan_id"":custloan_id, ""ekyc_req_id"":ekycreq_id, ""NRIC"":New]))",,,,31-07-2024 16:11:52,31-07-2024 16:11:52,0.191s,PASSED
+println(response6.getRequestBodyContent()),,,,31-07-2024 16:11:52,31-07-2024 16:11:52,0.013s,ERROR

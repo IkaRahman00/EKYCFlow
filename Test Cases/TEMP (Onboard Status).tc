@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TEMP (Onboard Status)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>897a18e0-1359-4198-b760-f995fefa996c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3ee14d74-64a1-45c5-81c2-571e4113f507</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>1</defaultValue>
+      <description></description>
+      <id>3ee14d74-64a1-45c5-81c2-571e4113f507</id>
+      <masked>false</masked>
+      <name>statreq_id</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,12 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Customer IDV,,,,16-08-2024 14:20:25,16-08-2024 14:20:32,7.021s,FAILED
+,,,,,,,
+Test Cases/TC02_Customer_Idv,,Scenario 2 : Take NRIC from customer idv table that has done fully ekyc,,16-08-2024 14:20:31,16-08-2024 14:20:32,0.323s,FAILED
+"println(""**************MEMBER ONBOARDINGG STARTED**************"")",,Member Onboarding Status,,16-08-2024 14:20:31,16-08-2024 14:20:31,0.002s,PASSED
+statreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,,,,16-08-2024 14:20:31,16-08-2024 14:20:31,0.001s,PASSED
+custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000,,,,16-08-2024 14:20:31,16-08-2024 14:20:31,0.001s,PASSED
+println(custloan_id),,,,16-08-2024 14:20:31,16-08-2024 14:20:31,0.001s,PASSED
+"response4 = sendRequest(findTestObject(""EKYC Flow/Member Onboarding Status"", [""stat_req_id"":statreq_id, ""NRIC"":IDV_Nric]))",,,,16-08-2024 14:20:31,16-08-2024 14:20:32,0.140s,PASSED
+println(response4.getResponseBodyContent()),,,,16-08-2024 14:20:32,16-08-2024 14:20:32,0.001s,PASSED
+getStatusCode()).isEqualTo(200),,,,16-08-2024 14:20:32,16-08-2024 14:20:32,0.001s,PASSED
+"println(verifyElementPropertyValue(response4, ""exists"", ""true""))",,,,16-08-2024 14:20:32,16-08-2024 14:20:32,0.105s,FAILED

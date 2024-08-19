@@ -1,0 +1,12 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New Test Suite,,,,01-08-2024 10:46:30,01-08-2024 10:46:36,5.934s,PASSED
+,,,,,,,
+Test Cases/TC02_Customer_Idv,,Scenario 2 : Take NRIC from customer idv table that has done fully ekyc,,01-08-2024 10:46:30,01-08-2024 10:46:36,5.696s,PASSED
+custreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,,Customer Risk Rating,,01-08-2024 10:46:31,01-08-2024 10:46:31,0.059s,PASSED
+custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000,,,,01-08-2024 10:46:31,01-08-2024 10:46:31,0.003s,PASSED
+println(custloan_id),,,,01-08-2024 10:46:31,01-08-2024 10:46:31,0.008s,PASSED
+"response1 = sendRequest(findTestObject(""EKYC Flow/Customer Risk Rating"", [""cust_req_id"":custreq_id, ""cust_loan_id"":custloan_id, ""IDV_Nric"":IDV_Nric]))",,,,01-08-2024 10:46:31,01-08-2024 10:46:35,4.707s,PASSED
+println(response1.getResponseBodyContent()),,,,01-08-2024 10:46:35,01-08-2024 10:46:35,0.014s,PASSED
+getStatusCode()).isEqualTo(200),,,,01-08-2024 10:46:35,01-08-2024 10:46:36,0.260s,PASSED
+"println(verifyElementPropertyValue(response1, ""evaluationStatus"", ""Approve""))",,,,01-08-2024 10:46:36,01-08-2024 10:46:36,0.135s,PASSED
+"println(""**************CUSTOMER RISK RATING PASSED**************"")",,,,01-08-2024 10:46:36,01-08-2024 10:46:36,0.004s,PASSED

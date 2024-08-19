@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New Test Suite,,,,01-08-2024 10:56:55,01-08-2024 10:56:59,3.763s,FAILED
+,,,,,,,
+Test Cases/TC02_Customer_Idv,,Scenario 2 : Take NRIC from customer idv table that has done fully ekyc,,01-08-2024 10:56:59,01-08-2024 10:56:59,0.163s,FAILED
+statreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,,Member Onboarding Status,,01-08-2024 10:56:59,01-08-2024 10:56:59,0.001s,PASSED
+custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000,,,,01-08-2024 10:56:59,01-08-2024 10:56:59,0.000s,PASSED
+println(custloan_id),,,,01-08-2024 10:56:59,01-08-2024 10:56:59,0.001s,PASSED
+"response4 = sendRequest(findTestObject(""EKYC Flow/Member Onboarding Status"", [""stat_req_id"":statreq_id, ""NRIC"":IDV_Nric]))",,,,01-08-2024 10:56:59,01-08-2024 10:56:59,0.122s,PASSED
+println(response4.getResponseBodyContent()),,,,01-08-2024 10:56:59,01-08-2024 10:56:59,0.001s,PASSED
+getStatusCode()).isEqualTo(200),,,,01-08-2024 10:56:59,01-08-2024 10:56:59,0.004s,FAILED

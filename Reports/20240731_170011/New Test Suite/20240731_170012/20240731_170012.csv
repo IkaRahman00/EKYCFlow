@@ -1,0 +1,13 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New Test Suite,Chrome 127.0.0.0,,,31-07-2024 17:00:17,31-07-2024 17:00:26,9.543s,PASSED
+,,,,,,,
+Test Cases/Fully EKYC (Temp),Chrome 127.0.0.0,,,31-07-2024 17:00:21,31-07-2024 17:00:26,5.492s,PASSED
+ekycreq_id = Math.random() * 100,Chrome 127.0.0.0,Fully EKYC,,31-07-2024 17:00:21,31-07-2024 17:00:21,0.000s,PASSED
+custloan_id = Math.random() * 100,Chrome 127.0.0.0,,,31-07-2024 17:00:21,31-07-2024 17:00:21,0.000s,PASSED
+println(ekycreq_id),Chrome 127.0.0.0,,,31-07-2024 17:00:21,31-07-2024 17:00:21,0.000s,PASSED
+"response6 = sendRequest(findTestObject(""EKYC Flow/Fully EKYC"", [""ekyc_loan_id"":custloan_id, ""ekyc_req_id"":ekycreq_id, ""NRIC"":New]))",Chrome 127.0.0.0,,,31-07-2024 17:00:21,31-07-2024 17:00:21,0.387s,PASSED
+println(response6.getResponseBodyContent()),Chrome 127.0.0.0,,,31-07-2024 17:00:21,31-07-2024 17:00:21,0.002s,PASSED
+getStatusCode()).isEqualTo(200),Chrome 127.0.0.0,,,31-07-2024 17:00:21,31-07-2024 17:00:21,0.003s,PASSED
+"web = getElementPropertyValue(response6, ""webUrl"")",Chrome 127.0.0.0,,,31-07-2024 17:00:21,31-07-2024 17:00:21,0.124s,PASSED
+println(web),Chrome 127.0.0.0,,,31-07-2024 17:00:21,31-07-2024 17:00:21,0.002s,PASSED
+openBrowser(web),Chrome 127.0.0.0,,,31-07-2024 17:00:21,31-07-2024 17:00:26,4.947s,PASSED

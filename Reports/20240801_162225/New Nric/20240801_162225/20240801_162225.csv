@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New Nric,,,,01-08-2024 16:22:30,01-08-2024 16:22:34,3.808s,FAILED
+,,,,,,,
+Test Cases/TC01_NEW_NRIC,,Scenario 1 : Take new NRIC and do the ekyc flow,,01-08-2024 16:22:33,01-08-2024 16:22:34,0.160s,FAILED
+custreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,,Customer Risk Rating,,01-08-2024 16:22:33,01-08-2024 16:22:33,0.001s,PASSED
+custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000,,,,01-08-2024 16:22:33,01-08-2024 16:22:33,0.000s,PASSED
+println(custloan_id),,,,01-08-2024 16:22:33,01-08-2024 16:22:33,0.002s,PASSED
+"response1 = sendRequest(findTestObject(""EKYC Flow/Customer Risk Rating"", [""cust_req_id"":custreq_id, ""cust_loan_id"":custloan_id, ""NRIC"":New_Nric]))",,,,01-08-2024 16:22:33,01-08-2024 16:22:34,0.102s,PASSED
+println(response1.getResponseBodyContent()),,,,01-08-2024 16:22:34,01-08-2024 16:22:34,0.000s,PASSED
+getStatusCode()).isEqualTo(200),,,,01-08-2024 16:22:34,01-08-2024 16:22:34,0.003s,FAILED

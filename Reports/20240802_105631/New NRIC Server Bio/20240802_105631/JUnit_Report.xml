@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="New NRIC Server Bio" time="31.503" tests="1" failures="0" errors="0">
+   <testsuite name="New NRIC Server Bio" tests="1" failures="0" errors="0" time="31.503" skipped="0" timestamp="02-08-2024T10:56:39" hostname="Zulaikha_118633 - 118633-001L-MY.adl.local" id="Test Suites/New NRIC Server Bio">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\zulaikha_118633\\git\\EKYCFlow\\Reports\\20240802_105631\\New NRIC Server Bio\\20240802_105631"/>
+         <property name="logFiles" value="C:\\Users\\zulaikha_118633\\git\\EKYCFlow\\Reports\\20240802_105631\\New NRIC Server Bio\\20240802_105631\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Zulaikha_118633 - 118633-001L-MY.adl.local"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="9.6.0.217"/>
+         <property name="browser" value="Chrome 127.0.0.0"/>
+         <property name="hostAddress" value="172.20.10.3"/>
+         <property name="sessionId" value="b0f984e126de6bf426cf07609bc92149"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/TC04_NewNRIC_ServerBio" time="31.108" classname="Test Cases/TC04_NewNRIC_ServerBio" status="PASSED">
+         <system-out><![CDATA[02-08-2024T10:56:39 - [TEST_CASE][PASSED] - Test Cases/TC04_NewNRIC_ServerBio: Test Cases/TC04_NewNRIC_ServerBio
+
+02-08-2024T10:56:40 - [TEST_STEP][PASSED] - serreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+02-08-2024T10:56:41 - [TEST_STEP][PASSED] - custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+02-08-2024T10:56:41 - [TEST_STEP][PASSED] - response7 = sendRequest(findTestObject("EKYC Flow/Server Bio", ["ser_loan_id":custloan_id, "ser_req_id":serreq_id, "NRIC":New_Nric])): Send request successfully
+
+02-08-2024T10:56:44 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240802_105631\New NRIC Server Bio\20240802_105631\requests\main\0.har
+
+02-08-2024T10:56:44 - [MESSAGE][PASSED] - Send request successfully
+
+02-08-2024T10:56:44 - [TEST_STEP][PASSED] - println(response7.getResponseBodyContent()): null
+
+02-08-2024T10:56:44 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+02-08-2024T10:56:45 - [TEST_STEP][PASSED] - web1 = getElementPropertyValue(response7, "webUrl"): null
+
+02-08-2024T10:56:45 - [TEST_STEP][PASSED] - println(web1): null
+
+02-08-2024T10:56:45 - [TEST_STEP][PASSED] - openBrowser(web1): Browser is opened with url: 'https://boost.web.apac-1.jumio.ai/web/v4/app?authorizationToken=eyJhbGciOiJIUzUxMiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAA_5XMTQ5CMQhG0b10LElLoYAzh07dAf1hBSaaGPdu39uBU75z-aT1vj3TNRVB5CZmVaumS_Ix7nPfSUhjOQIvM6A8DNxrAa6zS7PeKOzgJzYyMyoOjLIx24K-YoDlObp0Nybf-BXrHz4eK7bGjJQ1Y8ncakVS3rEc-_ms7QCNHDx4AqEo9N1DtxihjZmmpu8P4bjDYPAAAAA.lrvcAYztbG7WF2XrpxOYUjmyG465FF_2_jPTJAWJRmeypRKmqyIxwpOwmstxkvw9_f1EqXepdsvVMZUsp3nYlg&locale=en'
+
+02-08-2024T10:56:45 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+02-08-2024T10:56:46 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+02-08-2024T10:56:50 - [MESSAGE][PASSED] - Browser is opened with url: 'https://boost.web.apac-1.jumio.ai/web/v4/app?authorizationToken=eyJhbGciOiJIUzUxMiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAA_5XMTQ5CMQhG0b10LElLoYAzh07dAf1hBSaaGPdu39uBU75z-aT1vj3TNRVB5CZmVaumS_Ix7nPfSUhjOQIvM6A8DNxrAa6zS7PeKOzgJzYyMyoOjLIx24K-YoDlObp0Nybf-BXrHz4eK7bGjJQ1Y8ncakVS3rEc-_ms7QCNHDx4AqEo9N1DtxihjZmmpu8P4bjDYPAAAAA.lrvcAYztbG7WF2XrpxOYUjmyG465FF_2_jPTJAWJRmeypRKmqyIxwpOwmstxkvw9_f1EqXepdsvVMZUsp3nYlg&locale=en'
+
+02-08-2024T10:56:50 - [TEST_STEP][PASSED] - delay(20): Delayed 20 second(s)
+
+02-08-2024T10:57:10 - [MESSAGE][PASSED] - Delayed 20 second(s)
+
+02-08-2024T10:57:10 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+02-08-2024T10:57:10 - [MESSAGE][PASSED] - Browser is closed
+
+02-08-2024T10:57:10 - [TEST_STEP][PASSED] - println("**************SERVER BIO PASSED**************"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[02-08-2024T10:56:39 - [TEST_SUITE][PASSED] - New NRIC Server Bio: Test Cases/TC04_NewNRIC_ServerBio]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Start</name>
+   <tag></tag>
+   <elementGuidId>b66fc5b0-74f7-4fb6-aa9e-623cff270eba</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='guidance-btn']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#guidance-btn</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Start&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>b5238868-0fc6-4efd-b060-b95a21401dd7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>guidance-btn</value>
+      <webElementGuid>1907fca8-0507-4d88-a44c-ef4ac0e14c8b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn--primary iproov__btn</value>
+      <webElementGuid>3953bf90-4402-464a-a39c-907c9a4e4d69</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+          Start
+          
+        </value>
+      <webElementGuid>7a6317e6-8e5b-4b08-95c3-7854370af434</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;guidance-btn&quot;)</value>
+      <webElementGuid>5e443449-d629-440f-94d1-e0691bda4de2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@id='guidance-btn']</value>
+      <webElementGuid>4e4cc183-74bc-4021-9aa6-3def547d868a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//app-root[@id='app-root']/div/div/div/div/main/div/app-iproov-wrapper/div/app-iproov-guidance/div/div[3]/app-iproov/div/iproov-me/div[3]/div/button</value>
+      <webElementGuid>16791a9a-6b61-4f60-8807-8eab98dacc54</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Center your face in the frame and follow the on-screen instructions.'])[2]/following::button[1]</value>
+      <webElementGuid>a5f2e9fd-710f-4d81-a481-531ec23503ee</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Face verification'])[1]/following::button[1]</value>
+      <webElementGuid>f3b589f8-21b8-4dad-987f-df903cca9143</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Analyzing biometric data'])[1]/preceding::button[1]</value>
+      <webElementGuid>40dd8f58-d949-4d41-aedb-3e62f13cf4d1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/button</value>
+      <webElementGuid>b300f140-4434-4eb8-9fe8-922c6bfe6229</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@id = 'guidance-btn' and (text() = '
+          Start
+          
+        ' or . = '
+          Start
+          
+        ')]</value>
+      <webElementGuid>a2c16a6b-2c6e-45ba-bc63-f2beee55cdf5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

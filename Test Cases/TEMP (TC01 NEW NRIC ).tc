@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Take new NRIC and do the ekyc flow</description>
+   <name>TEMP (TC01 NEW NRIC )</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d45c9dc8-98b5-4a68-ab6b-5847893ef502</testCaseGuid>
+</TestCaseEntity>

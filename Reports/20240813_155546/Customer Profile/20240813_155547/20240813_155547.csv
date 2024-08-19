@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Customer Profile,,,,13-08-2024 15:55:52,13-08-2024 15:55:55,3.419s,FAILED
+,,,,,,,
+Test Cases/TC03_Customer_Profile,,Scenario 3 : Take NRIC from customer profile table that has done fully ekyc,,13-08-2024 15:55:52,13-08-2024 15:55:55,3.185s,FAILED
+statreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,,Member Onboarding Status,,13-08-2024 15:55:52,13-08-2024 15:55:53,0.056s,PASSED
+custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000,,,,13-08-2024 15:55:53,13-08-2024 15:55:53,0.002s,PASSED
+println(custloan_id),,,,13-08-2024 15:55:53,13-08-2024 15:55:53,0.007s,PASSED
+"response4 = sendRequest(findTestObject(""EKYC Flow/Member Onboarding Status"", [""stat_req_id"":statreq_id, ""NRIC"":P_NRIC]))",,,,13-08-2024 15:55:53,13-08-2024 15:55:55,2.039s,PASSED
+println(response4.getResponseBodyContent()),,,,13-08-2024 15:55:55,13-08-2024 15:55:55,0.021s,PASSED
+getStatusCode()).isEqualTo(200),,,,13-08-2024 15:55:55,13-08-2024 15:55:55,0.299s,FAILED

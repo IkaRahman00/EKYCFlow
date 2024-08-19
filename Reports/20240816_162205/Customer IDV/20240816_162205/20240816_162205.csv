@@ -1,0 +1,27 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Customer IDV,,,,16-08-2024 16:22:14,16-08-2024 16:22:21,6.808s,FAILED
+,,,,,,,
+Test Cases/TC02_Customer_Idv,,Scenario 2 : Take NRIC from customer idv table that has done fully ekyc,,16-08-2024 16:22:20,16-08-2024 16:22:21,0.538s,FAILED
+"println(""**************MEMBER ONBOARDINGG STARTED**************"")",,Member Onboarding Status,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.000s,PASSED
+statreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.000s,PASSED
+custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000,,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.001s,PASSED
+println(custloan_id),,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.001s,PASSED
+"response4 = sendRequest(findTestObject(""EKYC Flow/Member Onboarding Status"", [""stat_req_id"":statreq_id, ""NRIC"":IDV_Nric]))",,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.123s,PASSED
+println(response4.getResponseBodyContent()),,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.001s,PASSED
+getStatusCode()).isEqualTo(200),,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.000s,PASSED
+"println(verifyElementPropertyValue(response4, ""exists"", ""true""))",,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.052s,PASSED
+"println(""**************MEMBER ONBOARDINGG PASSED**************"")",,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.000s,PASSED
+"println(""**************MEMBER EXISTENCE STARTED**************"")",,Member Existence Check,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.001s,PASSED
+exreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.000s,PASSED
+println(custloan_id),,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.000s,PASSED
+"response5 = sendRequest(findTestObject(""EKYC Flow/Member Existence Check"", [""ex_loan_id"":custloan_id, ""ex_req_id"":exreq_id, ""NRIC"":IDV_Nric]))",,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.134s,PASSED
+println(response5.getResponseBodyContent()),,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.000s,PASSED
+getStatusCode()).isEqualTo(200),,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.000s,PASSED
+"println(verifyElementPropertyValue(response5, ""exists"", ""true""))",,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.046s,PASSED
+"println(""**************MEMBER EXISTENCE PASSED**************"")",,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.000s,PASSED
+"println(""**************CUSTOMER RISK RATING STARTED**************"")",,Customer Risk Rating,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.000s,PASSED
+custreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.001s,PASSED
+println(custloan_id),,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.000s,PASSED
+"response1 = sendRequest(findTestObject(""EKYC Flow/Customer Risk Rating"", [""cust_req_id"":custreq_id, ""cust_loan_id"":custloan_id, ""NRIC"":IDV_Nric]))",,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.142s,PASSED
+println(response1.getResponseBodyContent()),,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.000s,PASSED
+getStatusCode()).isEqualTo(200),,,,16-08-2024 16:22:21,16-08-2024 16:22:21,0.003s,FAILED

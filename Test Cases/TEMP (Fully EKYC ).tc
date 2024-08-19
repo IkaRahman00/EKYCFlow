@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TEMP (Fully EKYC )</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>53c5b907-87cb-4b96-91c5-c5614df690c0</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5efef419-701b-49f6-a7a8-2ec54adb269d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a15512e3-e9f6-46e9-889e-5335f7905d53</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>87c890b5-598d-4a27-97f7-ce5252119e05</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>1</defaultValue>
+      <description></description>
+      <id>5efef419-701b-49f6-a7a8-2ec54adb269d</id>
+      <masked>false</masked>
+      <name>custloan_id</name>
+   </variable>
+   <variable>
+      <defaultValue>133434545</defaultValue>
+      <description></description>
+      <id>a15512e3-e9f6-46e9-889e-5335f7905d53</id>
+      <masked>false</masked>
+      <name>ekycreq_id</name>
+   </variable>
+   <variable>
+      <defaultValue>620324030178</defaultValue>
+      <description></description>
+      <id>87c890b5-598d-4a27-97f7-ce5252119e05</id>
+      <masked>false</masked>
+      <name>New</name>
+   </variable>
+</TestCaseEntity>

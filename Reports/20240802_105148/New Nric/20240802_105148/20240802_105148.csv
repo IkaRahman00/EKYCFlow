@@ -1,0 +1,50 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New Nric,Chrome 127.0.0.0,,,02-08-2024 10:51:56,02-08-2024 10:53:43,1m - 46.271s,PASSED
+,,,,,,,
+Test Cases/TC01_NEW_NRIC,Chrome 127.0.0.0,Scenario 1 : Take new NRIC and do the ekyc flow,,02-08-2024 10:51:57,02-08-2024 10:53:43,1m - 45.891s,PASSED
+custreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,Chrome 127.0.0.0,Customer Risk Rating,,02-08-2024 10:51:58,02-08-2024 10:51:58,0.059s,PASSED
+custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000,Chrome 127.0.0.0,,,02-08-2024 10:51:58,02-08-2024 10:51:58,0.004s,PASSED
+println(custloan_id),Chrome 127.0.0.0,,,02-08-2024 10:51:58,02-08-2024 10:51:58,0.008s,PASSED
+"response1 = sendRequest(findTestObject(""EKYC Flow/Customer Risk Rating"", [""cust_req_id"":custreq_id, ""cust_loan_id"":custloan_id, ""NRIC"":New_Nric]))",Chrome 127.0.0.0,,,02-08-2024 10:51:58,02-08-2024 10:52:02,3.553s,PASSED
+println(response1.getResponseBodyContent()),Chrome 127.0.0.0,,,02-08-2024 10:52:02,02-08-2024 10:52:02,0.027s,PASSED
+getStatusCode()).isEqualTo(200),Chrome 127.0.0.0,,,02-08-2024 10:52:02,02-08-2024 10:52:02,0.278s,PASSED
+"println(verifyElementPropertyValue(response1, ""evaluationStatus"", ""Approve""))",Chrome 127.0.0.0,,,02-08-2024 10:52:02,02-08-2024 10:52:02,0.118s,PASSED
+"println(""**************CUSTOMER RISK RATING PASSED**************"")",Chrome 127.0.0.0,,,02-08-2024 10:52:02,02-08-2024 10:52:02,0.003s,PASSED
+indreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,Chrome 127.0.0.0,Industry Risk Rating,,02-08-2024 10:52:02,02-08-2024 10:52:02,0.005s,PASSED
+"response2 = sendRequest(findTestObject(""EKYC Flow/Industry Risk Rating"", [""ind_loan_id"":custloan_id, ""ind_req_id"":indreq_id, ""NRIC"":New_Nric]))",Chrome 127.0.0.0,,,02-08-2024 10:52:02,02-08-2024 10:52:03,1.058s,PASSED
+println(response2.getResponseBodyContent()),Chrome 127.0.0.0,,,02-08-2024 10:52:03,02-08-2024 10:52:03,0.007s,PASSED
+getStatusCode()).isEqualTo(200),Chrome 127.0.0.0,,,02-08-2024 10:52:03,02-08-2024 10:52:03,0.003s,PASSED
+"println(verifyElementPropertyValue(response2, ""riskAssessmentType"", ""PROHIBITED_INDUSTRY""))",Chrome 127.0.0.0,,,02-08-2024 10:52:03,02-08-2024 10:52:03,0.074s,PASSED
+"println(verifyElementPropertyValue(response2, ""evaluationStatus"", ""Reject""))",Chrome 127.0.0.0,,,02-08-2024 10:52:03,02-08-2024 10:52:03,0.046s,PASSED
+"println(""**************INDUSTRY RISK RATING PASSED**************"")",Chrome 127.0.0.0,,,02-08-2024 10:52:03,02-08-2024 10:52:03,0.002s,PASSED
+comreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,Chrome 127.0.0.0,Company Risk Rating,,02-08-2024 10:52:03,02-08-2024 10:52:03,0.003s,PASSED
+"response3 = sendRequest(findTestObject(""EKYC Flow/Company Risk Rating"", [""com_loan_id"":custloan_id, ""com_req_id"":comreq_id, ""NRIC"":New_Nric]))",Chrome 127.0.0.0,,,02-08-2024 10:52:03,02-08-2024 10:52:04,0.983s,PASSED
+println(response3.getResponseBodyContent()),Chrome 127.0.0.0,,,02-08-2024 10:52:04,02-08-2024 10:52:04,0.002s,PASSED
+getStatusCode()).isEqualTo(200),Chrome 127.0.0.0,,,02-08-2024 10:52:04,02-08-2024 10:52:04,0.001s,PASSED
+"println(verifyElementPropertyValue(response3, ""riskAssessmentType"", ""COMPANY_RISK""))",Chrome 127.0.0.0,,,02-08-2024 10:52:04,02-08-2024 10:52:04,0.061s,PASSED
+"println(verifyElementPropertyValue(response3, ""evaluationStatus"", ""Reject""))",Chrome 127.0.0.0,,,02-08-2024 10:52:04,02-08-2024 10:52:04,0.055s,PASSED
+"println(""**************COMPANY RISK RATING PASSED**************"")",Chrome 127.0.0.0,,,02-08-2024 10:52:04,02-08-2024 10:52:04,0.003s,PASSED
+statreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,Chrome 127.0.0.0,Member Onboarding Status,,02-08-2024 10:52:04,02-08-2024 10:52:04,0.003s,PASSED
+custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000,Chrome 127.0.0.0,,,02-08-2024 10:52:04,02-08-2024 10:52:04,0.003s,PASSED
+println(custloan_id),Chrome 127.0.0.0,,,02-08-2024 10:52:04,02-08-2024 10:52:05,0.003s,PASSED
+"response4 = sendRequest(findTestObject(""EKYC Flow/Member Onboarding Status"", [""stat_req_id"":statreq_id]))",Chrome 127.0.0.0,,,02-08-2024 10:52:05,02-08-2024 10:52:05,0.170s,PASSED
+println(response4.getResponseBodyContent()),Chrome 127.0.0.0,,,02-08-2024 10:52:05,02-08-2024 10:52:05,0.002s,PASSED
+getStatusCode()).isEqualTo(200),Chrome 127.0.0.0,,,02-08-2024 10:52:05,02-08-2024 10:52:05,0.001s,PASSED
+"println(verifyElementPropertyValue(response4, ""exists"", ""true""))",Chrome 127.0.0.0,,,02-08-2024 10:52:05,02-08-2024 10:52:05,0.050s,PASSED
+exreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,Chrome 127.0.0.0,Member Existence Check,,02-08-2024 10:52:05,02-08-2024 10:52:05,0.002s,PASSED
+"response5 = sendRequest(findTestObject(""EKYC Flow/Member Existence Check"", [""ex_loan_id"":custloan_id, ""ex_req_id"":exreq_id, ""NRIC"":New_Nric]))",Chrome 127.0.0.0,,,02-08-2024 10:52:05,02-08-2024 10:52:05,0.510s,PASSED
+println(response5.getResponseBodyContent()),Chrome 127.0.0.0,,,02-08-2024 10:52:05,02-08-2024 10:52:05,0.002s,PASSED
+getStatusCode()).isEqualTo(200),Chrome 127.0.0.0,,,02-08-2024 10:52:05,02-08-2024 10:52:05,0.002s,PASSED
+"println(verifyElementPropertyValue(response5, ""exists"", ""true""))",Chrome 127.0.0.0,,,02-08-2024 10:52:05,02-08-2024 10:52:05,0.059s,PASSED
+"println(""**************MEMBER EXISTENCE PASSED**************"")",Chrome 127.0.0.0,,,02-08-2024 10:52:05,02-08-2024 10:52:05,0.001s,PASSED
+ekycreq_id = Math.floor(Math.random() * 9000000000) + 1000000000,Chrome 127.0.0.0,Fully EKYC,,02-08-2024 10:52:05,02-08-2024 10:52:05,0.007s,PASSED
+custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000,Chrome 127.0.0.0,,,02-08-2024 10:52:05,02-08-2024 10:52:05,0.003s,PASSED
+"response6 = sendRequest(findTestObject(""EKYC Flow/Fully EKYC"", [""ekyc_loan_id"":custloan_id, ""ekyc_req_id"":ekycreq_id, ""NRIC"":New_Nric]))",Chrome 127.0.0.0,,,02-08-2024 10:52:05,02-08-2024 10:52:06,0.612s,PASSED
+println(response6.getResponseBodyContent()),Chrome 127.0.0.0,,,02-08-2024 10:52:06,02-08-2024 10:52:06,0.002s,PASSED
+getStatusCode()).isEqualTo(200),Chrome 127.0.0.0,,,02-08-2024 10:52:06,02-08-2024 10:52:06,0.001s,PASSED
+"web = getElementPropertyValue(response6, ""webUrl"")",Chrome 127.0.0.0,,,02-08-2024 10:52:06,02-08-2024 10:52:06,0.101s,PASSED
+println(web),Chrome 127.0.0.0,,,02-08-2024 10:52:06,02-08-2024 10:52:06,0.000s,PASSED
+openBrowser(web),Chrome 127.0.0.0,,,02-08-2024 10:52:06,02-08-2024 10:52:12,6.182s,PASSED
+delay(90),Chrome 127.0.0.0,,,02-08-2024 10:52:12,02-08-2024 10:53:42,1m - 30.091s,PASSED
+closeBrowser(),Chrome 127.0.0.0,,,02-08-2024 10:53:42,02-08-2024 10:53:43,0.402s,PASSED
+"println(""**************FULLY EKYC PASSED**************"")",Chrome 127.0.0.0,,,02-08-2024 10:53:43,02-08-2024 10:53:43,0.001s,PASSED

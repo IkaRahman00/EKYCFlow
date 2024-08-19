@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="New Nric" time="4.608" tests="1" failures="0" errors="0">
+   <testsuite name="New Nric" tests="1" failures="0" errors="0" time="4.608" skipped="0" timestamp="01-08-2024T16:24:55" hostname="Zulaikha_118633 - 118633-001L-MY.adl.local" id="Test Suites/New Nric">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\zulaikha_118633\\git\\EKYCFlow\\Reports\\20240801_162450\\New Nric\\20240801_162451"/>
+         <property name="logFiles" value="C:\\Users\\zulaikha_118633\\git\\EKYCFlow\\Reports\\20240801_162450\\New Nric\\20240801_162451\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Zulaikha_118633 - 118633-001L-MY.adl.local"/>
+         <property name="hostAddress" value="172.20.10.3"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="9.6.0.217"/>
+      </properties>
+      <testcase name="Test Cases/TC01_NEW_NRIC" time="4.336" classname="Test Cases/TC01_NEW_NRIC" status="PASSED">
+         <system-out><![CDATA[01-08-2024T16:24:56 - [TEST_CASE][PASSED] - Test Cases/TC01_NEW_NRIC: Test Cases/TC01_NEW_NRIC
+
+01-08-2024T16:24:56 - [TEST_STEP][PASSED] - custreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+01-08-2024T16:24:56 - [TEST_STEP][PASSED] - custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+01-08-2024T16:24:56 - [TEST_STEP][PASSED] - println(custloan_id): null
+
+01-08-2024T16:24:56 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("EKYC Flow/Customer Risk Rating", ["cust_req_id":custreq_id, "cust_loan_id":custloan_id, "NRIC":New_Nric])): Send request successfully
+
+01-08-2024T16:24:59 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240801_162450\New Nric\20240801_162451\requests\main\0.har
+
+01-08-2024T16:25:00 - [MESSAGE][PASSED] - Send request successfully
+
+01-08-2024T16:25:00 - [TEST_STEP][PASSED] - println(response1.getResponseBodyContent()): null
+
+01-08-2024T16:25:00 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+01-08-2024T16:25:00 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response1, "evaluationStatus", "Approve")): Verify element property value successfully
+
+01-08-2024T16:25:00 - [MESSAGE][PASSED] - Verify element property value successfully
+
+01-08-2024T16:25:00 - [TEST_STEP][PASSED] - println("**************CUSTOMER RISK RATING PASSED**************"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[01-08-2024T16:24:55 - [TEST_SUITE][PASSED] - New Nric: Test Cases/TC01_NEW_NRIC]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

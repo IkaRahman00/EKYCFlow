@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="New Nric" time="115.902" tests="1" failures="0" errors="0">
+   <testsuite name="New Nric" tests="1" failures="0" errors="0" time="115.902" skipped="0" timestamp="09-08-2024T10:35:35" hostname="Zulaikha_118633 - 118633-001L-MY.adl.local" id="Test Suites/New Nric">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\zulaikha_118633\\git\\EKYCFlow\\Reports\\20240809_103530\\New Nric\\20240809_103530"/>
+         <property name="logFiles" value="C:\\Users\\zulaikha_118633\\git\\EKYCFlow\\Reports\\20240809_103530\\New Nric\\20240809_103530\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Zulaikha_118633 - 118633-001L-MY.adl.local"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="9.6.0.217"/>
+         <property name="browser" value="Chrome 127.0.0.0"/>
+         <property name="hostAddress" value="172.20.10.3"/>
+         <property name="sessionId" value="9355a118947a4aceb151701db45a54aa"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/TC01_NEW_NRIC" time="115.516" classname="Test Cases/TC01_NEW_NRIC" status="PASSED">
+         <system-out><![CDATA[09-08-2024T10:35:35 - [TEST_CASE][PASSED] - Test Cases/TC01_NEW_NRIC: Test Cases/TC01_NEW_NRIC
+
+09-08-2024T10:35:36 - [TEST_STEP][PASSED] - custreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+09-08-2024T10:35:36 - [TEST_STEP][PASSED] - custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+09-08-2024T10:35:36 - [TEST_STEP][PASSED] - println(custloan_id): null
+
+09-08-2024T10:35:36 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("EKYC Flow/Customer Risk Rating", ["cust_req_id":custreq_id, "cust_loan_id":custloan_id, "NRIC":New_Nric])): Send request successfully
+
+09-08-2024T10:35:39 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240809_103530\New Nric\20240809_103530\requests\main\0.har
+
+09-08-2024T10:35:39 - [MESSAGE][PASSED] - Send request successfully
+
+09-08-2024T10:35:39 - [TEST_STEP][PASSED] - println(response1.getResponseBodyContent()): null
+
+09-08-2024T10:35:39 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+09-08-2024T10:35:40 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response1, "evaluationStatus", "Approve")): Verify element property value successfully
+
+09-08-2024T10:35:40 - [MESSAGE][PASSED] - Verify element property value successfully
+
+09-08-2024T10:35:40 - [TEST_STEP][PASSED] - println("**************CUSTOMER RISK RATING PASSED**************"): null
+
+09-08-2024T10:35:40 - [TEST_STEP][PASSED] - indreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+09-08-2024T10:35:40 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("EKYC Flow/Industry Risk Rating", ["ind_loan_id":custloan_id, "ind_req_id":indreq_id, "NRIC":New_Nric])): Send request successfully
+
+09-08-2024T10:35:41 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240809_103530\New Nric\20240809_103530\requests\main\1.har
+
+09-08-2024T10:35:41 - [MESSAGE][PASSED] - Send request successfully
+
+09-08-2024T10:35:41 - [TEST_STEP][PASSED] - println(response2.getResponseBodyContent()): null
+
+09-08-2024T10:35:41 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+09-08-2024T10:35:41 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response2, "riskAssessmentType", "PROHIBITED_INDUSTRY")): Verify element property value successfully
+
+09-08-2024T10:35:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+09-08-2024T10:35:41 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response2, "evaluationStatus", "Reject")): Verify element property value successfully
+
+09-08-2024T10:35:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+09-08-2024T10:35:41 - [TEST_STEP][PASSED] - println("**************INDUSTRY RISK RATING PASSED**************"): null
+
+09-08-2024T10:35:41 - [TEST_STEP][PASSED] - comreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+09-08-2024T10:35:41 - [TEST_STEP][PASSED] - response3 = sendRequest(findTestObject("EKYC Flow/Company Risk Rating", ["com_loan_id":custloan_id, "com_req_id":comreq_id, "NRIC":New_Nric])): Send request successfully
+
+09-08-2024T10:35:42 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240809_103530\New Nric\20240809_103530\requests\main\2.har
+
+09-08-2024T10:35:42 - [MESSAGE][PASSED] - Send request successfully
+
+09-08-2024T10:35:42 - [TEST_STEP][PASSED] - println(response3.getResponseBodyContent()): null
+
+09-08-2024T10:35:42 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+09-08-2024T10:35:42 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response3, "riskAssessmentType", "COMPANY_RISK")): Verify element property value successfully
+
+09-08-2024T10:35:42 - [MESSAGE][PASSED] - Verify element property value successfully
+
+09-08-2024T10:35:42 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response3, "evaluationStatus", "Reject")): Verify element property value successfully
+
+09-08-2024T10:35:42 - [MESSAGE][PASSED] - Verify element property value successfully
+
+09-08-2024T10:35:42 - [TEST_STEP][PASSED] - println("**************COMPANY RISK RATING PASSED**************"): null
+
+09-08-2024T10:35:42 - [TEST_STEP][PASSED] - statreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+09-08-2024T10:35:42 - [TEST_STEP][PASSED] - custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+09-08-2024T10:35:42 - [TEST_STEP][PASSED] - println(custloan_id): null
+
+09-08-2024T10:35:42 - [TEST_STEP][PASSED] - response4 = sendRequest(findTestObject("EKYC Flow/Member Onboarding Status", ["stat_req_id":statreq_id])): Send request successfully
+
+09-08-2024T10:35:42 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240809_103530\New Nric\20240809_103530\requests\main\3.har
+
+09-08-2024T10:35:42 - [MESSAGE][PASSED] - Send request successfully
+
+09-08-2024T10:35:42 - [TEST_STEP][PASSED] - println(response4.getResponseBodyContent()): null
+
+09-08-2024T10:35:42 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+09-08-2024T10:35:42 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response4, "exists", "true")): Verify element property value successfully
+
+09-08-2024T10:35:42 - [MESSAGE][PASSED] - Verify element property value successfully
+
+09-08-2024T10:35:42 - [TEST_STEP][PASSED] - exreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+09-08-2024T10:35:42 - [TEST_STEP][PASSED] - response5 = sendRequest(findTestObject("EKYC Flow/Member Existence Check", ["ex_loan_id":custloan_id, "ex_req_id":exreq_id, "NRIC":New_Nric])): Send request successfully
+
+09-08-2024T10:35:43 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240809_103530\New Nric\20240809_103530\requests\main\4.har
+
+09-08-2024T10:35:43 - [MESSAGE][PASSED] - Send request successfully
+
+09-08-2024T10:35:43 - [TEST_STEP][PASSED] - println(response5.getResponseBodyContent()): null
+
+09-08-2024T10:35:43 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+09-08-2024T10:35:43 - [TEST_STEP][PASSED] - println(verifyElementPropertyValue(response5, "exists", "true")): Verify element property value successfully
+
+09-08-2024T10:35:43 - [MESSAGE][PASSED] - Verify element property value successfully
+
+09-08-2024T10:35:43 - [TEST_STEP][PASSED] - println("**************MEMBER EXISTENCE PASSED**************"): null
+
+09-08-2024T10:35:43 - [TEST_STEP][PASSED] - ekycreq_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+09-08-2024T10:35:43 - [TEST_STEP][PASSED] - custloan_id = Math.floor(Math.random() * 9000000000) + 1000000000: null
+
+09-08-2024T10:35:43 - [TEST_STEP][PASSED] - response6 = sendRequest(findTestObject("EKYC Flow/Fully EKYC", ["ekyc_loan_id":custloan_id, "ekyc_req_id":ekycreq_id, "NRIC":New_Nric])): Send request successfully
+
+09-08-2024T10:35:43 - [MESSAGE][INFO] - HAR: C:\Users\zulaikha_118633\git\EKYCFlow\Reports\20240809_103530\New Nric\20240809_103530\requests\main\5.har
+
+09-08-2024T10:35:43 - [MESSAGE][PASSED] - Send request successfully
+
+09-08-2024T10:35:43 - [TEST_STEP][PASSED] - println(response6.getResponseBodyContent()): null
+
+09-08-2024T10:35:43 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+09-08-2024T10:35:43 - [TEST_STEP][PASSED] - web = getElementPropertyValue(response6, "webUrl"): null
+
+09-08-2024T10:35:43 - [TEST_STEP][PASSED] - println(web): null
+
+09-08-2024T10:35:43 - [TEST_STEP][PASSED] - openBrowser(web): Browser is opened with url: 'https://boost.web.apac-1.jumio.ai/web/v4/app?authorizationToken=eyJhbGciOiJIUzUxMiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAA_5WOvQ1CMQyEd0mNpdhObIeOkpYNnDiZAAkkxO7kvQ3o7ufT6T5pvm_PdE2oxKhYmRpKuiQf4x47p-YlZ1IYdRkUYQZD6zBHMLrRlOgHfsJ9BIU6g2gXKLFV0yYgJG26Va3hG36t-Q8-HnMdTzKVbLlh5v2Si7FgtqM_x_aGUysOvmpAITXoddve1lgmtZaw9P0BsKdAV_AAAAA.EKk9_d77DogZu8Mtx8C-kQUnmZ5AsZ2iIaGShEAEIRrpcou9j0M2GjFe5mGiEQRXp3IxX3Q-X_w79xBnZ91i5A&locale=en'
+
+09-08-2024T10:35:43 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+09-08-2024T10:35:43 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+09-08-2024T10:35:48 - [MESSAGE][PASSED] - Browser is opened with url: 'https://boost.web.apac-1.jumio.ai/web/v4/app?authorizationToken=eyJhbGciOiJIUzUxMiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAA_5WOvQ1CMQyEd0mNpdhObIeOkpYNnDiZAAkkxO7kvQ3o7ufT6T5pvm_PdE2oxKhYmRpKuiQf4x47p-YlZ1IYdRkUYQZD6zBHMLrRlOgHfsJ9BIU6g2gXKLFV0yYgJG26Va3hG36t-Q8-HnMdTzKVbLlh5v2Si7FgtqM_x_aGUysOvmpAITXoddve1lgmtZaw9P0BsKdAV_AAAAA.EKk9_d77DogZu8Mtx8C-kQUnmZ5AsZ2iIaGShEAEIRrpcou9j0M2GjFe5mGiEQRXp3IxX3Q-X_w79xBnZ91i5A&locale=en'
+
+09-08-2024T10:35:48 - [TEST_STEP][PASSED] - delay(90): Delayed 90 second(s)
+
+09-08-2024T10:37:19 - [MESSAGE][PASSED] - Delayed 90 second(s)
+
+09-08-2024T10:37:19 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+09-08-2024T10:37:30 - [MESSAGE][PASSED] - Browser is closed
+
+09-08-2024T10:37:30 - [TEST_STEP][PASSED] - println("**************FULLY EKYC PASSED**************"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[09-08-2024T10:35:35 - [TEST_SUITE][PASSED] - New Nric: Test Cases/TC01_NEW_NRIC]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
